@@ -29,7 +29,7 @@ if playerConnected then
                 if modelHash ~= 0 and not old_vehicle_hash ~= modelHash then
                     local modelName = GetDisplayNameFromVehicleModel(modelHash)
                     -- print('Name: ' .. modelName .. ' Hash: ' .. modelHash .. ' ID: ' .. vehicle)
-                    
+
                     for _, car in ipairs(gtrust.vehicles) do
                         if car.hash == modelHash then
                             old_vehicle_hash = modelHash
@@ -40,7 +40,12 @@ if playerConnected then
                         Wait(500)
                         -- print('This vehicle is not in the system and has been deleted.')
                         TaskLeaveVehicle(playerpedid, vehicle, 1) -- Player leaves vehicle
-                        Wait(2000)
+                        TriggerEvent('chat:addMessage', {
+                            color = { 255, 0, 0},
+                            multiline = true,
+                            args = {"Garage Warnings", "You do not have permissions to use this vehicle."}
+                          })                        
+                          Wait(2000)
                     elseif vehicle_found then
                         vehicle_found = false
                     end
