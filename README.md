@@ -4,9 +4,12 @@ This script is intended to be a "basic" trust system for your servers.
 
 **How do I trust vehicles?**
 - You will go to the cl_config.lua and you will have to manually input the name/hash of the vehicle.
+
 **How do I get the hash?**
 - With the script you are able to get the hash by spawning it in and getting it from console (one of the things you can uncomment out in the client.lua)
 
+**Will I have to trust all of the base-game vehicles?**
+- Yes not all of the base game vehicles are listed in the config or at least the one's you want people to be able to use.
 
 The following image shows the warning system when the person is kicked out of the vehicle.
 ![image](https://github.com/user-attachments/assets/c97d6922-8685-4345-94f7-dc0405889574)
