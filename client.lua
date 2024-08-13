@@ -43,7 +43,7 @@ if playerConnected then
                         TriggerEvent('chat:addMessage', {
                             color = { 255, 0, 0},
                             multiline = true,
-                            args = {"Garage Warnings", "You do not have permissions to use this vehicle."}
+                            args = {"^5Garage", "^9You are not allowed to drive this vehicle."}
                           })                        
                           Wait(2000)
                     elseif vehicle_found then
